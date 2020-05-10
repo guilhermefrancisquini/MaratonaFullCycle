@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+  # desafio2:
+  #   build:
+  #     context: ./desafio2
+  #     target: 'develop-stage'
+  #   ports:
+  #   - '3000:3000'
+  #   volumes:
+  #   - ./desafio2:/app
+  #   command: /bin/sh -c "yarn install && yarn run start:dev"
+
+  desafio3:
+    build:
+      context: ./desafio3
+      target: 'develop-stage'
+    ports:
+    - '3000:3000'
+    volumes:
+    - ./desafio3:/app
+    command: /bin/sh -c "yarn install && yarn run start:dev"
